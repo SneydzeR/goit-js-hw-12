@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
-  </head>
-  <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HW12</title>
+  
+  <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-5401a4b0.js">
+  <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-cf6910df.css">
+  <link rel="stylesheet" href="/goit-js-hw-12/assets/index-9d53ddb6.css">
+</head>
 
+<body>
+  <div class="preloader">
+    <div class="preloader__row">
+      <p>load</p>
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+  <form autocomplete="off">
+    <input type="text" placeholder="Search images..." />
+    <button type="submit" id="search">Search</button>
+  </form>
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+  <ul class="gallery"></ul>
+
+  <button type="button" id="addImg">Load more</button>
+
+  <!-- Loads the specified .html file -->
+  <section class="vite-promo">
   <div class="container">
     <div class="wrapper">
       <h2 class="title">
@@ -70,7 +70,7 @@
       <!-- Path to images as from index.html file -->
       <img
         class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
+        src="/goit-js-hw-12/assets/vite-logo-51249ca9.png"
         alt="Vite logo"
         width="640"
         height="640"
@@ -79,7 +79,10 @@
   </div>
 </section>
 
+  
+  
+  
+  <!-- <script type="module" src="./main.js"></script> -->
+</body>
 
-    
-  </body>
 </html>
